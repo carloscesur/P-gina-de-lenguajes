@@ -1,0 +1,373 @@
+:root {
+  --naranja: #f2961b; /* Juan Antoio */
+  --negro: #21201e; /* Juan Antoio */
+  --naranjaclaro: #ebb064;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*Esto permite que 1rem = 10px*/
+  /*font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+*/
+}
+
+.header {
+  background-image: url(../img/indexfondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: var(--negro); /* Juan Antonio */
+  display: flex;
+  justify-content: center;
+}
+footer {
+  /* background-color: var(--negro); /* Juan Antonio */
+  background-image: linear-gradient(white, lightgray, darkgray, black);
+}
+
+/*#footern {
+  background-color: inherit;*/
+
+h1 {/*BILAL*/
+  color: var(--naranja);
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Helvetica",Arial, sans-serif;
+  text-shadow:0 -2px 10px;;
+  text-transform: capitalize;
+}
+body{/*BILAL*/
+  font-family: "Garamond", Helvetica, sans-serif;
+}
+h2 {/*BILAL*/
+  color: var(--negro); 
+  text-align: center;
+  font-size: 2.5rem;
+  font-family:"Roboto Condensed", sans-serif;
+  text-transform: capitalize;
+  
+}
+h3 {/*BILAL*/
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.2rem;
+  text-decoration: underline;
+  text-transform: capitalize;
+  
+}
+a {
+  text-decoration: none; /*Elimina el estilo por defecto que agrega el navegador a los enlaces*/
+}
+p {/*BILAL*/
+  color: var(--negro); 
+  font-size: 2rem;
+  font-style: italic;
+  
+}
+.overline{/*BILAL*/
+  text-decoration: overline;
+}
+.tachado{/*BILAL*/
+   text-decoration: line-through; 
+}
+.espaciadopalabra{
+  word-spacing: 2rem;   
+}
+.espaciadoletra{
+  letter-spacing: 0.5rem;
+}
+.indentado{
+  text-indent: 5rem;
+}
+.fas{
+  color:black;
+  font-size: 3rem;
+}
+.h3color {
+  color: #da8313;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.h3vinos {
+  color: var(--negro); /* Arturo */
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: -1.25rem;
+}
+.h4vinos {
+  color: var(--negro);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*IMAGENES*/
+img {
+  max-width: 100%; /*ajusta el ancho de la imagen al máximo del contenedor*/
+}
+.imagengaleria {
+  width: 100%;
+  height: 56.25%; /*Ajustar a la proporción 16/9*/
+}
+.imginvert {
+  /*Invierte el color de una imagen (En este caso la imagen principal)*/
+  -webkit-filter: invert(1) hue-rotate(180deg) contrast(2);
+  filter: invert(1) hue-rotate(180deg) contrast(2);
+}
+.imagensobrenosotros {
+  width: 650px;
+  height: 350px;
+  margin: auto;
+  display: block;
+}
+.textnav {
+  color: var(--naranja);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.25rem 1rem;
+}
+.textnav:hover {
+  color: var(--negro);
+  background-color: var(--naranja);
+}
+.textfooter {
+  color: var(--naranja);
+  font-size: 2rem;
+  padding: 1rem 5rem;
+}
+#textindex {
+  font-size: 2.25rem;
+  text-align: justify;
+}
+.galeriaPostres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*Numero de columnas*/
+  column-gap: 4rem; /*Margen entre columnas*/
+  text-align: justify;
+}
+
+.galeriaMenu {
+  /*Sam Galvan */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*Numero de columnas*/
+  column-gap: 4rem; /*Margen entre columnas*/
+  text-align: justify;
+}
+.galeriaEventos {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+  column-gap: 4rem; /*Margen entre columnas*/
+  text-align: justify;
+}
+.galeriaMes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.parrafoMenu {
+  text-align: justify;
+  height: 6rem;
+}
+
+.parrafoPostres {
+  text-align: justify;
+  height: 5rem;
+}
+.parrafoEventos {
+  text-align: justify;
+  height: 5rem;
+}
+
+.tablahorario {
+  /*bilal */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+  column-gap: 4rem; /*Margen entre columnas*/
+  text-align: center;
+}
+.videoresponsive{
+  position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.videoresponsive iframe,
+.videoresponsive object,
+.videoresponsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+/* Arturo */
+a:link {
+  color: var(--naranja);
+}
+/* cuando el ratón esta encima del link */
+a:hover {
+  color: #b67118e8;
+}
+/* color de un link que ya has visitado */
+a:visited {
+  color: var(--naranja);
+}
+/* Color del link al dar click */
+a:active {
+  color: #f8af4fe8;
+}
+
+.fondoindex {
+  color: var(--naranja);
+}
+.fondoborroso {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    )
+    url("../img/fondo borroso index.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/* Arturo - vinos */
+
+.galeriaproductos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.paddingvinos {
+  padding-left: 1.5rem;
+}
+
+.galeriavino {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr; /*Numero de columnas*/
+  column-gap: 1rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.bordediv {
+  width: 10rem;
+  border: 1px solid #000000;
+}
+
+.box-shadow {
+  border: 1px solid #7e7d7d;
+  background: rgb(255, 255, 255);
+  box-shadow: 4px 3px 5px 1px #cac9c9;
+  -webkit-box-shadow: 4px 3px 5px 1px #d1cece;
+  width: 25rem;
+  height: 22rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 4.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.box {
+  background-color: #f8f7f6;
+  padding-bottom: rem;
+  width: 6.8rem;
+  height: 6.5rem;
+  border-radius: 25px;
+  border: 1px solid #e6e6e6;
+}
+.centrarimagen {
+  display: block;
+  margin: auto;
+}
+
+.margenFormulario div {
+  margin: 2rem 1rem;
+}
+
+.gradientFormulario {
+  background-image: linear-gradient(white, black, black, black);
+}
+
+/* .boxIndex {
+  display: flex;
+  flex-direction: row;
+} */
+/* .secciongaleria{X
+    height: 20rem;
+    width: 20rem;
+} */
+
+/*MEDA QUERYS*/
+@media (min-width: 1440px) {
+  .boxnaranja {
+    background-color: var(--naranjaclaro);
+    padding: 5rem;
+  }
+  .tablaindex {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*Numero de columnas*/
+    column-gap: 4rem; /*Margen entre columnas*/
+    text-align: center;
+  }
+}
+@media (max-width: 1439px) {
+  .boxnaranja {
+    padding: 0 1rem;
+  }
+  .galeriaPostres {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+    column-gap: 2rem; /*Margen entre columnas*/
+    text-align: justify;
+  }
+  .galeriaMenu {
+    display: grid;
+    grid-template-columns: 1fr; /*Numero de columnas*/
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+.textnav {
+  font-size: 1.5rem;
+  padding: 0.75rem 0.5rem;
+}
+#textindex {
+  font-size: 1.5rem;
+}
+.galeriaPostres {
+  display: grid;
+  grid-template-columns: 1fr; /*Numero de columnas*/
+}
+.parrafoPostres {
+  text-align: center;
+  height: 5rem;
+}
+/* Esto es el gradiente del Formulario */
