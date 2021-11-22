@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- formato de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Juan Antonio Gracia" />
+    <!-- Autor -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- formato responsive -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contacto</title>
+    <!-- TITULO en la pestaña del navegador -->
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Logo Y Barra de Navegación -->
+      <div>
+        <a href="index.html"
+          ><img class="imginvert centrarimagen" src="img/LogoPikoteo.png"
+        /></a>
+      </div>
+      <nav>
+        <a class="textnav" href="index.html">Inicio</a>
+        <a class="textnav" href="aboutus.html">Sobre nosotros</a>
+        <a class="textnav" href="menu.html">Nuestra carta</a>
+        <a class="textnav" href="postres.html">Postres</a>
+        <a class="textnav" href="eventos.html">Eventos</a>
+        <a class="textnav" href="contacto.html">Contactanos</a>
+      </nav>
+    </header>
+
+    <main class="contenedor">
+      <h1>Contacto</h1>
+      <!-- Título de Página -->
+      <p>
+        Si desea realizar alguna consulta por favor rellene el siguiente
+        formulario y en breve nos pondremos en contacto contigo. También nos
+        puedes llamar por teléfono – ¡esperamos verte pronto!
+      </p>
+
+      <form>
+        <div class="margenFormulario">
+          <p><label for="eleccion">Elige el motivo de tu consulta:</label></p>
+
+          <div>
+            <div>
+              <!-- Selector para el motivo de tu consulta-->
+              <select name="eleccion" id="eleccion">
+                <option value="1">Reserva</option>
+                <option value="2">Carta</option>
+                <option value="3">Otros</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="nombre">Nombre:</label>
+              <div class="margenFormulario">
+                <input type="text" id="nombre" name="nombre" required />
+              </div>
+            </div>
+
+            <div class="margenFormulario">
+              <input
+                type="radio"
+                id="hombre"
+                name="sexo"
+                value="Hombre"
+                required
+              />
+              <label for="hombre">Hombre</label>
+
+              <input
+                class="margenFormulario"
+                type="radio"
+                id="mujer"
+                name="sexo"
+                value="Mujer"
+                required
+              />
+              <label for="mujer">Mujer</label>
+            </div>
+
+            <div class="margenFormulario">
+              <div class="tamanoFormulario">
+                <label for="telefono">Telefono:</label>
+              </div>
+
+              <input type="tel" id="telefono" name="telefono" required />
+            </div>
+
+            <div class="margenFormulario">
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="margenFormulario">
+              <div><label for="texto">Describe tu consulta:</label></div>
+
+              <textarea name="textarea" rows="10" cols="30" required>
+              </textarea>
+              <input
+                type="checkbox"
+                id="cbterminos"
+                name="terminos"
+                checked
+                required
+              />
+              <label for="terminos"> Acepto los terminos y servicios</label>
+            </div>
+
+            <div class="margenFormulario">
+              <input type="submit" value="Enviar" />
+              <input type="reset" />
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6939042174167!2d-4.419380784368138!3d36.72991197935205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7c790f1238f%3A0xfef294129e3c2f83!2sRestaurante%20El%20Pik%C3%B3n!5e0!3m2!1ses!2ses!4v1634239490090!5m2!1ses!2ses"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+    </main>
+
+    <footer class="gradientFooter">
+      <!--pie de pagina-->
+      <div class="contenedor">
+        <div class="textfooter">
+          <h5>
+            Llámanos: +34 696 53 85 65 | Dirección: Plaza Lex Flavia Malacitana
+            6, 29013 Málaga, Spain
+          </h5>
+          <small>El Pikoteo &#169;</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
