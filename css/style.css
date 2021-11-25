@@ -17,8 +17,8 @@ html {
   background-position: center center;
 }
 
-body{/*BILAL*/
-  font-family: "Garamond", Helvetica, sans-serif;
+body{/*BILAL FUENTE DEL BODY*/
+  font-family: "Garamond", Helvetica, sans-serif; /*FUENTE FULL BACK Y SAFEFONT*/
 }
 
 .contenedor {
@@ -43,17 +43,17 @@ h1 {/*BILAL*/
   color: var(--naranja);
   text-align: center;
   font-size: 3rem;
-  font-family: "Helvetica",Arial, sans-serif;
-  text-shadow:0 -2px 10px;;
-  text-transform: capitalize;
+  font-family: "Helvetica",Arial, sans-serif; /*FUENTE FULL BACK Y SAFEFONT*/
+  text-shadow:0 -2px 10px;; /*SOMBRA*/
+  text-transform: capitalize; /*CADA PRIMERA LETRA MAYUSCULA*/
 }
 
 h2 {/*BILAL*/
   color: var(--negro); 
   text-align: center;
   font-size: 2.5rem;
-  font-family:"Roboto Condensed", sans-serif;
-  text-transform: capitalize;
+  font-family:"Roboto Condensed", sans-serif; /*FUENTE DE GOOGLE*/
+  text-transform: capitalize; /*CADA PRIMERA LETRA MAYUSCULA*/
   
 }
 h3 {/*BILAL*/
@@ -79,16 +79,16 @@ p {/*BILAL*/
 .tachado{/*BILAL*/
    text-decoration: line-through; 
 }
-.espaciadopalabra{
+.espaciadopalabra{/*BILAL*/
   word-spacing: 2rem;   
 }
-.espaciadoletra{
+.espaciadoletra{ /*BILAL*/
   letter-spacing: 0.5rem;
 }
-.indentado{
+.indentado{ /*BILAL*/
   text-indent: 5rem;
 }
-.fas{
+.fas{ /*LOGO HAPPYFONT DE ABOUT US*/
   color:black;
   font-size: 3rem;
 }
@@ -197,7 +197,7 @@ img {
   column-gap: 4rem; /*Margen entre columnas*/
   text-align: center;
 }
-.videoresponsive{
+.videoresponsive{ /*BILAL VIDEO YOUTUBE ABOUT US*/
   position: relative;
 padding-bottom: 56.25%;
 padding-top: 30px;
@@ -206,7 +206,7 @@ overflow: hidden;
 }
 .videoresponsive iframe,
 .videoresponsive object,
-.videoresponsive embed {
+.videoresponsive embed {/*BILAL VIDEO YOUTUBE ABOUT US*/
 position: absolute;
 top: 0;
 left: 0;
