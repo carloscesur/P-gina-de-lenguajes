@@ -1,7 +1,7 @@
 :root {
-  --naranja: #f2961b; /* Juan Antoio */
-  --negro: #21201e; /* Juan Antoio */
-  --naranjaclaro: #ebb064;
+  --naranja: #f2961b;           /* Juan Antonio */
+  --negro: #21201e;             /* Juan Antonio */
+  --naranjaclaro: #ebb064;      /* Juan Antonio */
 }
 html {
   box-sizing: border-box;
@@ -27,13 +27,13 @@ body{/*BILAL FUENTE DEL BODY*/
 }
 
 nav {
-  background-color: var(--negro); /* Juan Antonio */
+  background-color: var(--negro);       /* Juan Antonio */
   display: flex;
   justify-content: center;
 }
 footer {
-  /* background-color: var(--negro); /* Juan Antonio */
-  background-image: linear-gradient(white, lightgray, darkgray, black);
+  /* background-color: var(--negro);    /* Juan Antonio */
+  background-image: linear-gradient(white, black, black, black, black, black);
 }
 
 /*#footern {
@@ -298,12 +298,152 @@ a:active {
 }
 
 /* Formulario de Contacto*/
-.margenFormulario div {
-  margin: 2rem 1rem;
+
+/*Columnas principales */
+.tablaFormulario {  
+  display: grid;
+  grid-template-columns: 3fr 4fr; /*Numero de columnas*/
+  column-gap: 1rem; /*Margen entre columnas*/
+  margin: 1rem 1rem;
+  font-size: 2rem;
+  background-color: #cac9c980;
+  border: 1px solid #CCC;
+  padding: 1rem;
 }
 
-.gradientFormulario {
-  background-image: linear-gradient(white, black, black, black);
+.tablaTexto {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  text-align:right ;
+}
+
+.mapaFormulario {
+  width: 100%;
+  height: 100%;
+}
+
+/* El tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext {
+  top: -5px;
+  right: 105%;
+}
+
+/* Para customizar los botones del formulario*/
+.button {
+  background-color: #4c90af;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+/*Partes del Formulario Resposive */
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=tel] {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -364,5 +504,14 @@ a:active {
 .parrafoPostres {
   text-align: center;
   height: 5rem;
+  
 }
-/* Esto es el gradiente del Formulario */
+/* Responsive para el Formulario*/
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+}
