@@ -1,148 +1,215 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-  <head>
-    <meta charset="UTF-8" /> <!-- Formato de caracteres -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Juan Antonio Gracia" /> <!-- Autor -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- formato responsive -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Contacto</title><!-- TITULO en la pestaña del navegador -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!-- Link al repositorio de iconos de Material Design (Google) -->
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Formato de caracteres -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="Juan Antonio Gracia" />
+        <!-- Autor -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- formato responsive -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Contacto</title>
+        <!-- TITULO en la pestaña del navegador -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <!-- Link al repositorio de iconos de Material Design (Google) -->
+    </head>
 
-  <body>
-    <header class="header">
-      <!-- Logo Y Barra de Navegación -->
-      <div>
-        <a href="index.html"
-          ><img class="imginvert centrarimagen" src="img/LogoPikoteo.png"
-        /></a>
-      </div>
-      <nav>
-        <a class="textnav" href="index.html">Inicio</a>
-        <a class="textnav" href="aboutus.html">Sobre nosotros</a>
-        <a class="textnav" href="menu.html">Nuestra carta</a>
-        <a class="textnav" href="postres.html">Postres</a>
-        <a class="textnav" href="eventos.html">Eventos</a>
-        <a class="textnav" href="contacto.html">Contactanos</a>
-      </nav>
-    </header>
+    <body>
+        <header class="header">
+        <!-- Logo Y Barra de Navegación -->
+        <div>
+            <a href="index.html"
+            ><img class="imginvert centrarimagen" src="img/LogoPikoteo.png"
+            /></a>
+        </div>
+        <nav>
+            <a class="textnav" href="index.html">Inicio</a>
+            <a class="textnav" href="aboutus.html">Sobre nosotros</a>
+            <a class="textnav" href="menu.html">Nuestra carta</a>
+            <a class="textnav" href="postres.html">Postres</a>
+            <a class="textnav" href="eventos.html">Eventos</a>
+            <a class="textnav" href="contacto.html">Contactanos</a>
+        </nav>
+        </header>
 
-    <main class="contenedor">
+        <main class="contenedor">
+        <div>
+            <h1>Contacto</h1>
+            <!-- Título de Página -->
+            <p>
+            Si desea realizar alguna consulta por favor rellene el siguiente
+            formulario y en breve nos pondremos en contacto contigo. También nos
+            puedes llamar por teléfono – ¡esperamos verte pronto!
+            </p>
 
-      <div >
-        <h1>Contacto</h1><!-- Título de Página -->
-        <p> Si desea realizar alguna consulta por favor rellene el siguiente formulario y en breve nos pondremos en contacto contigo. También nos puedes llamar por teléfono – ¡esperamos verte pronto!</p>
-
-        <form class="tablaFormulario" ><!-- Comieza el Formulario -->
-          <div class="tablaTexto">
-
-            <div class="tooltip">
-              <div class="row">
-                <div class="col-25">
-                 <label for="fname">Nombre</label>
-               </div>
-               <div class="col-75">
-                 <span class="tooltiptext">Introduce tu nombre</span>
-                  <input type="text" id="fname" name="nombre" required placeholder="Nombre...">
+            <form class="tablaFormulario">
+            <!-- Comieza el Formulario -->
+            <div class="tablaTexto">
+                <div class="tooltip">
+                <div class="row">
+                    <div class="col-25">
+                    <label for="fname">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                    <span class="tooltiptext">Introduce tu nombre</span>
+                    <input
+                        type="text"
+                        id="fname"
+                        name="nombre"
+                        required
+                        placeholder="Nombre..."
+                    />
+                    </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="tooltip">
-              <div class="row">
-               <div class="col-25">
-                 <label for="fphone">Telefono</label>
                 </div>
-                <div class="col-75">
-                  <span class="tooltiptext">Introduce tu número de teléfono</span>
-                  <input type="tel" id="fphone" name="fphone" required placeholder="Telefono...">
-                </div>
-              </div>
-            </div>
 
-            <div class="tooltip">
-              <div class="row">
-               <div class="col-25">
-                  <label for="femail">Correo</label>  
+                <div class="tooltip">
+                <div class="row">
+                    <div class="col-25">
+                    <label for="fphone">Telefono</label>
+                    </div>
+                    <div class="col-75">
+                    <span class="tooltiptext"
+                        >Introduce tu número de teléfono</span
+                    >
+                    <input
+                        type="tel"
+                        id="fphone"
+                        name="fphone"
+                        required
+                        placeholder="Telefono..."
+                    />
+                    </div>
                 </div>
-                <div class="col-75">
-                  <span class="tooltiptext">Introduce tu correo electrónico</span>
-                  <input type="email" id="femail" name="femail" required placeholder="Correo Electrónico...">
                 </div>
-              </div>
-            </div>
 
-            <div class="tooltip">
+                <div class="tooltip">
+                <div class="row">
+                    <div class="col-25">
+                    <label for="femail">Correo</label>
+                    </div>
+                    <div class="col-75">
+                    <span class="tooltiptext"
+                        >Introduce tu correo electrónico</span
+                    >
+                    <input
+                        type="email"
+                        id="femail"
+                        name="femail"
+                        required
+                        placeholder="Correo Electrónico..."
+                    />
+                    </div>
+                </div>
+                </div>
 
-              <span class="tooltiptext">Elige tu género para referirme a usted</span>
+                <div class="tooltip">
+                <span class="tooltiptext"
+                    >Elige tu género para referirme a usted</span
+                >
 
                 <i class="material-icons">man</i>
                 <label for="hombre">Hombre</label>
-                <input type="radio" id="hombre" name="sexo" value="Hombre" required/>
+                <input
+                    type="radio"
+                    id="hombre"
+                    name="sexo"
+                    value="Hombre"
+                    required
+                />
 
                 <i class="material-icons">girl</i>
-                <label for="mujer">Mujer</label>                
-                <input type="radio" id="mujer" name="sexo" value="Mujer" required/>
-            </div>
-
-            <div class="tooltip">
-              <div class="row">
-                <div class="col-25">
-                 <label for="feleccion">Motivo</label>
+                <label for="mujer">Mujer</label>
+                <input
+                    type="radio"
+                    id="mujer"
+                    name="sexo"
+                    value="Mujer"
+                    required
+                />
                 </div>
-               <div class="col-75">
-                  <select id="motivo" name="feleccion">
-                    <option value="1">Reserva</option>
-                   <option value="2">Carta</option>
-                   <option value="3">Otros</option>
-                  </select>
+
+                <div class="tooltip">
+                <div class="row">
+                    <div class="col-25">
+                    <label for="feleccion">Motivo</label>
+                    </div>
+                    <div class="col-75">
+                    <select id="motivo" name="feleccion">
+                        <option value="1">Reserva</option>
+                        <option value="2">Carta</option>
+                        <option value="3">Otros</option>
+                    </select>
+                    </div>
                 </div>
-             </div>
-            </div>
-
-            <div class="tooltip">
-              <div class="row">
-               <div class="col-25">
-                <span class="tooltiptext">Describe el motivo de tu consulta</span>
-                 <label for="subject">Comentario</label>
-               </div>
-               <div class="col-75">
-                  <textarea id="subject" name="subject" placeholder="Describe los motivos de tu consulta..." required style="height:200px"></textarea>
-               </div>
-               <div>
-                <input type="checkbox" id="cbterminos" name="terminos" checked required/>
-                <label for="terminos"> Acepto los terminos y servicios </label>
                 </div>
-              </div>
+
+                <div class="tooltip">
+                <div class="row">
+                    <div class="col-25">
+                    <span class="tooltiptext"
+                        >Describe el motivo de tu consulta</span
+                    >
+                    <label for="subject">Comentario</label>
+                    </div>
+                    <div class="col-75">
+                    <textarea
+                        id="subject"
+                        name="subject"
+                        placeholder="Comenta el motivo de tu consulta..."
+                        required
+                        style="height: 200px;"
+                    ></textarea>
+                    </div>
+                    <div>
+                    <input
+                        type="checkbox"
+                        id="cbterminos"
+                        name="terminos"
+                        checked
+                        required
+                    />
+                    <label for="terminos">
+                        Acepto los terminos y servicios
+                    </label>
+                    </div>
+                </div>
+                </div>
+
+                <div class="row">
+                <input class="button" type="submit" value="Enviar" />
+                <input class="button" type="reset" />
+                </div>
             </div>
 
-            <div class="row">         
-              <input class="button" type="submit" value="Enviar" />
-              <input class="button" type="reset" />
-            </div>
-
+            <iframe
+                class="mapaFormulario"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6939042174167!2d-4.419380784368138!3d36.72991197935205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7c790f1238f%3A0xfef294129e3c2f83!2sRestaurante%20El%20Pik%C3%B3n!5e0!3m2!1ses!2ses!4v1634239490090!5m2!1ses!2ses"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+            >
+            </iframe>
+            </form>
         </div>
+        </main>
 
-        <iframe class="mapaFormulario" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6939042174167!2d-4.419380784368138!3d36.72991197935205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7c790f1238f%3A0xfef294129e3c2f83!2sRestaurante%20El%20Pik%C3%B3n!5e0!3m2!1ses!2ses!4v1634239490090!5m2!1ses!2ses"
-        style="border: 0;" allowfullscreen="" loading="lazy">
-      </iframe>
-      </form>
-    </div>
-    </main>
-
-    <footer class="gradientFooter">
-      <!--pie de pagina-->
-      <div class="contenedor">
-        <div class="textfooter">
-          <h5>
-            Llámanos: +34 696 53 85 65 | Dirección: Plaza Lex Flavia Malacitana
-            6, 29013 Málaga, Spain
-          </h5>
-          <small>El Pikoteo &#169;</small>
+        <footer class="gradientFooter">
+        <!--pie de pagina-->
+        <div class="contenedor">
+            <div class="textfooter">
+            <h5>
+                Llámanos: +34 696 53 85 65 | Dirección: Plaza Lex Flavia Malacitana
+                6, 29013 Málaga, Spain
+            </h5>
+            <small>El Pikoteo &#169;</small>
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
