@@ -1,0 +1,52 @@
+/* Formulario de Contacto*/
+.margenFormulario div {
+    margin: 2rem 1rem;
+}
+
+.gradientFormulario {
+    background-image: linear-gradient(white, --negro, --negro, --negro, --negro);
+}
+
+/*Columnas principales */
+.tablaFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+    column-gap: 1rem; /*Margen entre columnas*/
+    margin: 1rem 1rem;
+    font-size: 2rem;
+    background-color: #cac9c980;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.tablaTexto {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    text-align: right;
+}
+
+.mapaFormulario {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive para el Formulario*/
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+    }
+    .tablaFormulario {
+    display: grid;
+    grid-template-columns: 1fr; /*Numero de columnas*/
+    column-gap: 1rem; /*Margen entre columnas*/
+    margin: 1rem 1rem;
+    font-size: 2rem;
+    background-color: #cac9c980;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    }
+}

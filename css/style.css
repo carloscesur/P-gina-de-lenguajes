@@ -1,13 +1,14 @@
+@import url(base.css);
+/*layout.css*/
+/*menu.css*/
+@import url(formulario.css);
+/*tablas.css*/
+/*footer.css*/
+
 :root {
 --naranja: #f2961b; /* Juan Antoio */
 --negro: #21201e; /* Juan Antoio */
 --naranjaclaro: #ebb064; /*tabla index*/
-}
-html {
-    background-color: rgb(233, 232, 232);
-    box-sizing: border-box;
-    font-size: 62.5%; /*Esto permite que 1rem = 10px*/
-    /*font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;*/
 }
 
 .header {
@@ -20,58 +21,6 @@ html {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-}
-
-nav {
-    background-color: var(--negro); /* Juan Antonio */
-    display: flex;
-    justify-content: center;
-}
-footer {
-/* background-color: var(--negro); /* Juan Antonio */
-    background-image: linear-gradient(white, black, black, black);
-}
-
-/*#footern {
-background-color: inherit;*/
-
-h1 {
-/*BILAL*/
-    color: var(--naranja);
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Helvetica", Arial, sans-serif;
-    text-shadow: 0 -2px 10px; /*sombra y brillo*/
-    text-transform: capitalize;
-}
-body {
-/*BILAL*/
-    font-family: "Garamond", Helvetica, sans-serif;
-}
-h2 {
-/*BILAL*/
-    color: var(--negro);
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: "Roboto Condensed", sans-serif;
-    text-transform: capitalize;
-}
-h3 {
-/*BILAL*/
-    font-weight: bold;
-    text-align: center;
-    font-size: 2.2rem;
-    text-decoration: underline;
-    text-transform: capitalize;
-}
-a {
-    text-decoration: none; /*Elimina el estilo por defecto que agrega el navegador a los enlaces*/
-}
-p {
-/*BILAL*/
-    color: var(--negro);
-    font-size: 2rem;
-    font-style: italic;
 }
 .overline {
 /*BILAL*/
@@ -114,9 +63,7 @@ p {
 }
 
 /*IMAGENES*/
-img {
-    max-width: 100%; /*ajusta el ancho de la imagen al máximo del contenedor*/
-}
+
 .efectorounded {
 /*story redondear imagen esquinas */
     border-radius: 10px;
@@ -226,22 +173,6 @@ img {
     width: 100%;
     height: 100%;
 }
-/* Arturo */
-a:link {
-    color: var(--naranja);
-}
-/* cuando el ratón esta encima del link */
-a:hover {
-    color: #b67118e8;
-}
-/* color de un link que ya has visitado */
-a:visited {
-    color: var(--naranja);
-}
-/* Color del link al dar click */
-a:active {
-    color: #f8af4fe8;
-}
 
 .fondoindex {
     color: var(--naranja);
@@ -331,39 +262,7 @@ a:active {
     margin: auto;
 }
 
-.margenFormulario div {
-    margin: 2rem 1rem;
-}
 
-.gradientFormulario {
-    background-image: linear-gradient(white, --negro, --negro, --negro, --negro);
-}
-
-/* Formulario de Contacto*/
-
-/*Columnas principales */
-.tablaFormulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*Numero de columnas*/
-    column-gap: 1rem; /*Margen entre columnas*/
-    margin: 1rem 1rem;
-    font-size: 2rem;
-    background-color: #cac9c980;
-    border: 1px solid #ccc;
-    padding: 1rem;
-}
-
-.tablaTexto {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-    text-align: right;
-}
-
-.mapaFormulario {
-    width: 100%;
-    height: 100%;
-}
 
 /* El tooltip */
 .tooltip {
@@ -403,67 +302,6 @@ a:active {
     font-size: 2rem;
 }
 
-/*Partes del Formulario Resposive */
-input[type="text"],
-select,
-textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type="tel"] {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-input[type="email"] {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    margin: 5px;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-input[type="reset"] {
-    background-color: #4caf50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    margin: 5px;
-}
-
-input[type="reset"]:hover {
-    background-color: #45a049;
-}
-
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -491,114 +329,96 @@ input[type="reset"]:hover {
 
 /*MEDA QUERYS*/
 @media (min-width: 1440px) {
-.boxnaranja {
-    background-color: var(--naranjaclaro);
-    padding: 5rem;
+    .boxnaranja {
+        background-color: var(--naranjaclaro);
+        padding: 5rem;
+    }
+    .tablaindex {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /*Numero de columnas*/
+        column-gap: 4rem; /*Margen entre columnas*/
+        text-align: center;
+    }
 }
-.tablaindex {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /*Numero de columnas*/
-    column-gap: 4rem; /*Margen entre columnas*/
-    text-align: center;
-}
-}
+
 @media (max-width: 1439px) {
-.boxnaranja {
-    padding: 0 1rem;
-}
-.galeriaPostres {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*Numero de columnas*/
-    column-gap: 2rem; /*Margen entre columnas*/
-    text-align: justify;
-}
-.galeriaMenu {
-    display: grid;
-    grid-template-columns: 1fr; /*Numero de columnas*/
-    text-align: justify;
-}
-.galeriaproductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: justify;
-}
-.box-shadow {
-    border: 1px solid #7e7d7d;
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 3px 5px 1px #cac9c9;
-    -webkit-box-shadow: 4px 3px 5px 1px #d1cece;
-    width: 25rem;
-    height: 22rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-left: 4.5rem;
-    border-radius: 15px;
-    margin-bottom: 2rem;
-    margin: auto;
-}
+    .boxnaranja {
+        padding: 0 1rem;
+    }
+    .galeriaPostres {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+        column-gap: 2rem; /*Margen entre columnas*/
+        text-align: justify;
+    }
+    .galeriaMenu {
+        display: grid;
+        grid-template-columns: 1fr; /*Numero de columnas*/
+        text-align: justify;
+    }
+    .galeriaproductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+    .box-shadow {
+        border: 1px solid #7e7d7d;
+        background: rgb(255, 255, 255);
+        box-shadow: 4px 3px 5px 1px #cac9c9;
+        -webkit-box-shadow: 4px 3px 5px 1px #d1cece;
+        width: 25rem;
+        height: 22rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-left: 4.5rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        margin: auto;
+    }
 }
 
 @media (max-width: 767px) {
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2.25rem;
-}
-h3 {
-    font-size: 2rem;
-}
-p {
-    font-size: 1.5rem;
-}
-.textnav {
-    font-size: 1rem;
-    padding: 0.75rem 0.5rem;
-}
-#textindex {
-    font-size: 1.5rem;
-}
-.galeriaPostres {
-    display: grid;
-    grid-template-columns: 1fr; /*Numero de columnas*/
-}
-.parrafoPostres {
-    text-align: center;
-    height: 5rem;
-}
-.galeriaEventos {
-    display: grid;
-    grid-template-columns: 1fr; /*Numero de columnas*/
-}
-.parrafoEventos {
-    text-align: center;
-    height: 4rem;
-}
-.galeriaMes {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*Numero de columnas*/
-}
-.imagengaleriaMes {
-    width: 100%;
-    height: 56.25%; /*Ajustar a la proporción 16/9*/
-}
-/* Responsive para el Formulario*/
-@media screen and (max-width: 600px) {
-    .col-25,
-    .col-75,
-    input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
+    h1 {
+        font-size: 3rem;
     }
-    .tablaFormulario {
-    display: grid;
-    grid-template-columns: 1fr; /*Numero de columnas*/
-    column-gap: 1rem; /*Margen entre columnas*/
-    margin: 1rem 1rem;
-    font-size: 2rem;
-    background-color: #cac9c980;
-    border: 1px solid #ccc;
-    padding: 1rem;
+    h2 {
+        font-size: 2.25rem;
     }
-}
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .textnav {
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
+    }
+    #textindex {
+        font-size: 1.5rem;
+    }
+    .galeriaPostres {
+        display: grid;
+        grid-template-columns: 1fr; /*Numero de columnas*/
+    }
+    .parrafoPostres {
+        text-align: center;
+        height: 5rem;
+    }
+    .galeriaEventos {
+        display: grid;
+        grid-template-columns: 1fr; /*Numero de columnas*/
+    }
+    .parrafoEventos {
+        text-align: center;
+        height: 4rem;
+    }
+    .galeriaMes {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+    }
+    .imagengaleriaMes {
+        width: 100%;
+        height: 56.25%; /*Ajustar a la proporción 16/9*/
+    }
 }
