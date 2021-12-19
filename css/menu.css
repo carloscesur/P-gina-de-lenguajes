@@ -1,0 +1,16 @@
+.textnav {
+    color: var(--naranja);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.25rem 1rem;
+}
+.textnav:hover {
+    color: var(--negro);
+    background-color: var(--naranja);
+}
+@media (max-width: 767px) {
+    .textnav {
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
+    }
+}

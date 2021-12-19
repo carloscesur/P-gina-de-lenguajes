@@ -1,9 +1,9 @@
 @import url(base.css);
-/*layout.css*/
-/*menu.css*/
+@import url(layout.css); /*Pendiente*/
+@import url(menu.css);
 @import url(formulario.css);
-/*tablas.css*/
-/*footer.css*/
+@import url(tablas.css); /*Pendiente*/
+@import url(footer.css); /*Pendiente*/
 
 :root {
 --naranja: #f2961b; /* Juan Antoio */
@@ -91,16 +91,6 @@
     height: 350px;
     margin: auto;
     display: block;
-}
-.textnav {
-    color: var(--naranja);
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1.25rem 1rem;
-}
-.textnav:hover {
-    color: var(--negro);
-    background-color: var(--naranja);
 }
 .textfooter {
     color: var(--naranja);
@@ -389,10 +379,6 @@
     }
     p {
         font-size: 1.5rem;
-    }
-    .textnav {
-        font-size: 1rem;
-        padding: 0.75rem 0.5rem;
     }
     #textindex {
         font-size: 1.5rem;
