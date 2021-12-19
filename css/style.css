@@ -3,13 +3,8 @@
 @import url(menu.css);
 @import url(formulario.css);
 @import url(tablas.css); /*Pendiente*/
-@import url(footer.css); /*Pendiente*/
-
-:root {
---naranja: #f2961b; /* Juan Antoio */
---negro: #21201e; /* Juan Antoio */
---naranjaclaro: #ebb064; /*tabla index*/
-}
+@import url(footer.css);
+@import url(colors.css);
 
 .header {
     background-image: url(../img/indexfondo.jpg);
@@ -41,7 +36,7 @@
 }
 .fas {
 /*Logo about us*/
-    color: black;
+    color: var(--negro);
     font-size: 3rem;
 }
 .h3color {
@@ -91,11 +86,6 @@
     height: 350px;
     margin: auto;
     display: block;
-}
-.textfooter {
-    color: var(--naranja);
-    font-size: 2rem;
-    padding: 1rem 5rem;
 }
 #textindex {
     font-size: 2.25rem;
@@ -200,11 +190,11 @@
 
 .bordediv {
     width: 10rem;
-    border: 1px solid #000000;
+    border: 1px solid var(--negro);
 }
 
 .box-shadow {
-    border: 1px solid #7e7d7d;
+    border: 1px solid var(--grisneutro);
     background: rgb(255, 255, 255);
     box-shadow: 4px 3px 5px 1px #cac9c9;
     -webkit-box-shadow: 4px 3px 5px 1px #d1cece;
@@ -232,7 +222,7 @@
     font-size: 2.2rem;
     text-decoration: underline;
     text-transform: capitalize;
-    background-color: #000000;
+    background-color: var(--negro);
     border: 1px solid var(--naranja);
 }
 
@@ -243,8 +233,8 @@
     text-decoration: underline;
     text-transform: capitalize;
     background-color: var(--naranja);
-    border: 1px solid #000000;
-    color: #000000;
+    border: 1px solid var(--negro);
+    color: var(--negro);
 }
 
 .centrarimagen {
@@ -263,7 +253,7 @@
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: var(--negro);
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -352,7 +342,7 @@
         text-align: justify;
     }
     .box-shadow {
-        border: 1px solid #7e7d7d;
+        border: 1px solid var(--grisneutro);
         background: rgb(255, 255, 255);
         box-shadow: 4px 3px 5px 1px #cac9c9;
         -webkit-box-shadow: 4px 3px 5px 1px #d1cece;
