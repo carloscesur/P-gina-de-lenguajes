@@ -82,7 +82,7 @@
     }
     .galeriaMes {
         display: grid;
-        grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+        grid-template-columns: 1fr ; /*Numero de columnas*/
     }
 }
 /*MEDA QUERYS*/
