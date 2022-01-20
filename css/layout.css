@@ -1,5 +1,5 @@
 .tablahorario {
-    /*bilal */
+   
     display: grid;
     grid-template-columns: 1fr 1fr; /*Numero de columnas*/
     column-gap: 4rem; /*Margen entre columnas*/
@@ -11,7 +11,7 @@
     column-gap: 2rem;
 }
 .galeriaMenu {
-    /*Sam Galvan */
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; /*Numero de columnas*/
     column-gap: 4rem; /*Margen entre columnas*/
@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns: 1fr;
 }
-
+/*adaptabilidad de la pagina web a distintos tamaños según los PX de la pantalla*/
 @media (max-width: 1439px) {
     .boxnaranja {
         padding: 0 1rem;
@@ -89,7 +89,7 @@
         grid-template-columns: 1fr ; /*Numero de columnas*/
     }
 }
-/*MEDA QUERYS*/
+
 @media (min-width: 1440px) {
     .tablaindex {
         display: grid;
