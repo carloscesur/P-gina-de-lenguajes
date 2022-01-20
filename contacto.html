@@ -72,7 +72,7 @@
             formulario y en breve nos pondremos en contacto contigo. También nos
             puedes llamar por teléfono – ¡esperamos verte pronto!
             </p>
-            <div class="tablaFormulario">
+            <div class="tablaFormulario"> <!-- FORMULARIO-->
                 <div class="col">
                    <!--was-validated validación bootstrap-->
                     <form  action="/action_page.php" class=" was-validated">
@@ -83,13 +83,14 @@
                             <div class="col-3 p-2">
                                 <label for="fname" class="form-label">Nombre</label>
                             </div>
-                            <!-- Columna Textfiled -->
+                            <!-- Columna Textfield -->
                             <div class="col-8 p-2">
                                 <div class="row">
 
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                                <input type="text" id="fname" name="nombre" required placeholder="Nombre..." class="form-control" data-bs-toggle="tooltip" title="Rellene este campo"/>
+                                        <!--TOOLTIP-->
+                                <input type="text" id="fname" name="nombre" required placeholder="Nombre..." class="form-control" data-bs-toggle="tooltip" title="Rellene este campo por favor"/>
                                 <!--validación-->
                                 <div class="valid-feedback">Válido.</div>
                                 <div class="invalid-feedback">Por favor, rellene este campo.</div>
