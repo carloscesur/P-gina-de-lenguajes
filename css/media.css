@@ -4,13 +4,19 @@
         background-color: var(--naranjaclaro);
         padding: 5rem;
     }
+    .tablaindex {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /*Numero de columnas*/
+        column-gap: 4rem; /*Margen entre columnas*/
+        text-align: center;
+        font-size: 1,2rem; 
+    }
 }
 
 @media (max-width: 1439px) {
     .boxnaranja {
         padding: 0 1rem;
     }
-    
     .box-shadow {
         border: 1px solid var(--grisneutro);
         background: rgb(255, 255, 255);
@@ -24,6 +30,29 @@
         border-radius: 15px;
         margin-bottom: 2rem;
         margin: auto;
+    }
+    .boxnaranja {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+    }
+    .galeriaPostres {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Numero de columnas*/
+        column-gap: 2rem; /*Margen entre columnas*/
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+    .galeriaMenu {
+        display: grid;
+        grid-template-columns: 1fr; /*Numero de columnas*/
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+    .galeriaproductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: justify;
+        font-size: 1.2rem;
     }
 }
 
@@ -67,6 +96,18 @@
     .textnav {
         font-size: 1.2rem;  /* Juan Antonio */ 
         padding: 0.75rem 0.5rem;
+    }
+    .galeriaPostres {
+        display: grid;
+        grid-template-columns: 1fr; /*Numero de columnas*/
+    }
+    .galeriaEventos {
+        display: grid;
+        grid-template-columns: 1fr; /*Numero de columnas*/
+    }
+    .galeriaMes {
+        display: grid;
+        grid-template-columns: 1fr ; /*Numero de columnas*/
     }
 }
 
