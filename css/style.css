@@ -4,6 +4,9 @@
 @import url(formulario.css);
 @import url(footer.css);
 @import url(colors.css);
+@import url(text.css);
+@import url(img.css);
+@import url(video.css);
 
 .header {
     background-image: url(../img/indexfondo.jpg);
@@ -17,119 +20,11 @@
     max-width: 120rem;
     margin: 0 auto;
 }
-.overline {
-/*BILAL*/
-    text-decoration: overline;
-}
-.tachado {
-/*BILAL*/
-    text-decoration: line-through;
-}
-.espaciadopalabra {
-    word-spacing: 2rem;
-}
-.espaciadoletra {
-    letter-spacing: 0.5rem;
-}
-.indentado {
-    text-indent: 5rem;
-}
+
 .fas {
 /*Logo about us*/
     color: var(--negro);
     font-size: 3rem;
-}
-.h3color {
-    color: #da8313;
-    font-size: 2.25rem;
-    text-align: center;
-}
-.h3vinos {
-    color: var(--negro); /* Arturo */
-    font-size: 1.75rem;
-    text-align: center;
-    margin-top: -1.25rem;
-}
-.h4vinos {
-    color: var(--negro);
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-/*IMAGENES*/
-
-.fotoindex { /*Imagen sobre texto*/
-    position: absolute;
-    left: 60px;
-    top: 50px;
-    z-index: 1;
-    color: #ffffff;
-}
-
-.efectorounded {
-/*story redondear imagen esquinas */
-    border-radius: 10px;
-}
-.efectoreflexion {
-/*story 4 efecto reflexion y opacidad gradiente */
-    -webkit-box-reflect: right 10px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-}
-.imagengaleria {
-    width: 100%;
-    height: 56.25%; /*Ajustar a la proporción 16/9*/
-}
-.imagengaleriaMes {
-    width: 100%;
-    height: 50%;
-}
-.imginvert {
-/*Invierte el color de una imagen (En este caso la imagen principal)*/
-    -webkit-filter: invert(1) hue-rotate(180deg) contrast(2);
-    filter: invert(1) hue-rotate(180deg) contrast(2);
-}
-.imagensobrenosotros {
-    width: 650px;
-    height: 350px;
-    margin: auto;
-    display: block;
-}
-#textindex {
-    font-size: 2.25rem;
-    text-align: justify;
-}
-
-.parrafoMenu {
-    text-align: justify;
-    height: 9rem;
-}
-
-.parrafoPostres {
-    text-align: justify;
-    height: 9rem;
-}
-.parrafoEventos {
-    text-align: center;
-    height: 5rem;
-}
-
-
-.videoresponsive {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-.videoresponsive iframe,
-.videoresponsive object,
-.videoresponsive embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .fondoindex {
@@ -177,34 +72,6 @@
     border-radius: 25px;
     border: 1px solid #e6e6e6;
 }
-
-.textovino {
-    font-weight: bold;
-    text-align: center;
-    font-size: 2.2rem;
-    text-decoration: underline;
-    text-transform: capitalize;
-    background-color: var(--negro);
-    border: 1px solid var(--naranja);
-}
-
-.textovino:hover {
-    font-weight: bold;
-    text-align: center;
-    font-size: 2.2rem;
-    text-decoration: underline;
-    text-transform: capitalize;
-    background-color: var(--naranja);
-    border: 1px solid var(--negro);
-    color: var(--negro);
-}
-
-.centrarimagen {
-    display: block;
-    margin: auto;
-}
-
-
 
 /* El tooltip */
 .tooltip {
@@ -269,71 +136,3 @@
     clear: both;
 }
 
-/*MEDA QUERYS*/
-@media (min-width: 1440px) {
-    .boxnaranja {
-        background-color: var(--naranjaclaro);
-        padding: 5rem;
-    }
-    
-}
-
-@media (max-width: 1439px) {
-    .boxnaranja {
-        padding: 0 1rem;
-    }
-    
-    
-    .box-shadow {
-        border: 1px solid var(--grisneutro);
-        background: rgb(255, 255, 255);
-        box-shadow: 4px 3px 5px 1px #cac9c9;
-        -webkit-box-shadow: 4px 3px 5px 1px #d1cece;
-        width: 25rem;
-        height: 22rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        margin-left: 4.5rem;
-        border-radius: 15px;
-        margin-bottom: 2rem;
-        margin: auto;
-    }
-}
-
-@media (max-width: 767px) { /*Tamaño de fuentes adaptado*/
-    h1 {
-        font-family: 'Segoe UI', sans-serif;
-        font-size: 1.2em;
-    }
-    h2 {
-        font-family: 'Segoe UI', sans-serif;
-        font-size: 1.1em;
-    }
-    h3 {
-        font-family: 'Segoe UI', sans-serif;
-        font-size: 1em;
-    }
-    p {
-        font-family: Verdana, sans-serif;
-        font-size: 1em;
-    }
-    #textindex {
-        font-family: Verdana, sans-serif;
-        font-size: 1em;
-    }
-   
-    .parrafoPostres {
-        text-align: center;
-        height: 5em;
-    }
-  
-    .parrafoEventos {
-        text-align: center;
-        height: 4em;
-    }
-   
-    .imagengaleriaMes {
-        width: 100%;
-        height: 56.25%; /*Ajustar a la proporción 16/9*/
-    }
-}

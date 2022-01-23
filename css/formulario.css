@@ -30,28 +30,3 @@
     width: 100%;
     height: 100%;
 }
-
-/* Responsive para el Formulario*/
-@media screen and (max-width: 600px) {
-    .col-25,
-    .col-75,
-    input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-    
-    }
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .tablaFormulario {
-    display: grid;
-    grid-template-columns: 1fr; /*Numero de columnas*/
-    column-gap: 1rem; /*Margen entre columnas*/
-    margin: 1rem 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem; /* Juan ANtonio */
-    background-color: #cac9c980;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    }
-}
